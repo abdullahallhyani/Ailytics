@@ -1,14 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-import Login from './Login/Login';
+
+import NavBarCombonent from './Navbar/NavBarCombonent';
 
 
 function App() {
   return (
     <div >
+      
     
-   <Login></Login>
+ <NavBarCombonent/>
       
     </div>
   );
