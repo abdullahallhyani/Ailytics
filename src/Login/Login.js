@@ -5,12 +5,12 @@ export default class Login extends Component {
     return (
         <div class="auth-wrapper">
         <div class="auth-content">
-            <div class="auth-bg">
+            {/* <div class="auth-bg">
                 <span class="r"></span>
                 <span class="r s"></span>
                 <span class="r s"></span>
                 <span class="r"></span>
-            </div>
+            </div> */}
             <div class="card">
                 <div class="card-body text-center">
                     <div class="mb-4">
