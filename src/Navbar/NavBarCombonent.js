@@ -17,27 +17,65 @@ export default class NavBarCombonent extends Component {
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
-                <Nav.Link as={Link} to="/">
-                  Home
+                <Nav.Link as={Link} to="/CCTV">
+                  CCTV
+                </Nav.Link>
+                <Nav.Link as={Link} to="/plan_view">
+                  plan view{" "}
+                </Nav.Link>
+                <Nav.Link as={Link} to="/alart1">
+                  alart1
+                </Nav.Link>
+                <Nav.Link as={Link} to="/chart">
+                  chart
                 </Nav.Link>
                 <Nav.Link as={Link} to="/login">
-                  LogIn
+                  login{" "}
                 </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
         </div>
-        {/* <div>
+        <div>
           <Switch>
-            <Route path="/">
-              <App />
+            <Route path="/CCTV">
+              <CCTV />
+            </Route>
+            <Route path="/plan_view">
+              <plan_view />
+            </Route>
+            <Route path="/alart1">
+              <alart1 />
+            </Route>
+            <Route path="/chart">
+              <chart />
             </Route>
             <Route path="/login">
-              <Login />
+              <login />
             </Route>
           </Switch>
-        </div> */}
+        </div>
       </Router>
     );
   }
+}
+
+function CCTV() {
+  return <h2>CCTV</h2>;
+}
+
+function plan_view() {
+  return <h2>plan_view</h2>;
+}
+
+function alart1() {
+  return <h2>alart1</h2>;
+}
+
+function chart() {
+  return <h2>chart</h2>;
+}
+
+function login() {
+  return <h2>login</h2>;
 }
