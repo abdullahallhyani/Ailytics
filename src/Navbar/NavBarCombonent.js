@@ -30,11 +30,11 @@ export default class NavBarCombonent extends Component {
                 <div>
                 <Switch>
                     <Route path="/CCTV">
-                        {/* <CCTV /> */}
+                        <CCTV />
                         <plan_view/>
                         <alart1/>
                     </Route>
-                    <Route path="/plan_view">
+                    <Route path="./plan_view">
                         <plan_view/>
                     </Route>
                     <Route path="/alart1">
@@ -55,7 +55,7 @@ export default class NavBarCombonent extends Component {
     }
 
     function CCTV() {
-        return <div><h2>CCTV</h2><h2>plan_view</h2></div>;
+        return <h2>CCTV</h2>;
 
       }
       
