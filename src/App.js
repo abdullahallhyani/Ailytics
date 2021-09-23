@@ -1,18 +1,17 @@
-// import logo from './logo.svg';
+
 import './App.css';
 
-import Login from './Login/Login';
-import Navigation from './Navigation/Navigation';
 
-
-
+import NavBarCombonent from './Navbar/NavBarCombonent';
 
 
 function App() {
   return (
     <div >
-    <Navigation/>
-    {/* <Login></Login>    */}
+      
+    
+ <NavBarCombonent/>
+      
     </div>
   );
 }
