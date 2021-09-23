@@ -25,6 +25,11 @@ export default class Login extends Component {
                   placeholder="password"
                 />
               </div>
+              {/* <div>
+              <input class="" name="agreement" type="checkbox"  value="" checked=""/>
+              <span class="">Remeber me</span>
+
+              </div> */}
 
               <button class="btn btn-primary shadow-2 mb-4">Login</button>
             </div>
