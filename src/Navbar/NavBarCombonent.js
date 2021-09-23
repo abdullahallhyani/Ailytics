@@ -17,10 +17,10 @@ export default class NavBarCombonent extends Component {
                         <Navbar.Collapse id="navbarScroll">
                             <Nav className="mr-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll >
                                <Nav.Link as={Link} to="/CCTV">CCTV</Nav.Link>
-                                <Nav.Link as={Link} to="/plan_view">plan view </Nav.Link>
-                                <Nav.Link as={Link} to="/alart1">alart1</Nav.Link>
-                                <Nav.Link as={Link} to="/chart">chart</Nav.Link>
-                                <Nav.Link as={Link} to="/login">login </Nav.Link>
+                                <Nav.Link as={Link} to="/plan_view">Plan View </Nav.Link>
+                                <Nav.Link as={Link} to="/alart1">Alart</Nav.Link>
+                                <Nav.Link as={Link} to="/chart">Chart</Nav.Link>
+                                <Nav.Link as={Link} to="/login">Login </Nav.Link>
         
                             </Nav>
     
@@ -30,10 +30,12 @@ export default class NavBarCombonent extends Component {
                 <div>
                 <Switch>
                     <Route path="/CCTV">
-                        <CCTV />
+                        {/* <CCTV /> */}
+                        <plan_view/>
+                        <alart1/>
                     </Route>
                     <Route path="/plan_view">
-                        <plan_view />
+                        <plan_view/>
                     </Route>
                     <Route path="/alart1">
                         <alart1/>
@@ -53,7 +55,8 @@ export default class NavBarCombonent extends Component {
     }
 
     function CCTV() {
-        return <h2>CCTV</h2>;
+        return <div><h2>CCTV</h2><h2>plan_view</h2></div>;
+
       }
       
       function plan_view() {
