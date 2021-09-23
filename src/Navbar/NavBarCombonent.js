@@ -3,6 +3,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import App from "../App";
 import Login from "../Login/Login";
+
 export default class NavBarCombonent extends Component {
   render() {
     return (
@@ -37,45 +38,11 @@ export default class NavBarCombonent extends Component {
           </Navbar>
         </div>
         <div>
-          <Switch>
-            <Route path="/CCTV">
-              <CCTV />
-            </Route>
-            <Route path="/plan_view">
-              <plan_view />
-            </Route>
-            <Route path="/alart1">
-              <alart1 />
-            </Route>
-            <Route path="/chart">
-              <chart />
-            </Route>
-            <Route path="/login">
-              <login />
-            </Route>
-          </Switch>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
         </div>
       </Router>
     );
   }
-}
-
-function CCTV() {
-  return <h2>CCTV</h2>;
-}
-
-function plan_view() {
-  return <h2>plan_view</h2>;
-}
-
-function alart1() {
-  return <h2>alart1</h2>;
-}
-
-function chart() {
-  return <h2>chart</h2>;
-}
-
-function login() {
-  return <h2>login</h2>;
 }
