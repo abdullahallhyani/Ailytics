@@ -1,14 +1,52 @@
 .side {
-  list-style-type: none;
-  width: 15%;
-  position: fixed;
   height: 100%;
-  overflow: auto;
-  text-align: justify;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3f4d67;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-.item {
+
+.NavLink {
+  color: rgb(243, 243, 243);
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  margin-top: 20px;
+  font-family: "feather" !important;
+  font-style: normal;
+  font-weight: bolder;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+  padding: 6px 8px 6px 16px;
   text-decoration: none;
+  font-size: 20px;
+}
+.NavLink:hover {
+  background-color: #3c485f;
+  color: rgb(243, 243, 243);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .side {
+    max-width: 480px;
+    margin: auto;
+    background-color: #3f4d67;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  .NavLink {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .side .NavLink {
+    color: #3f4d67;
+  }
 }

@@ -48,6 +48,7 @@ export default function Login() {
             <button
               class="btn btn-primary shadow-2 mb-4"
               onClick={loginHandler}
+              type="submit"
             >
               Login
             </button>
