@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import App from "../App";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import "./NavBarStyle.css";
 import Login from "../Login/Login";
 
 export default class NavBarCombonent extends Component {
@@ -9,12 +9,24 @@ export default class NavBarCombonent extends Component {
     return (
       <Router>
         <div>
-          <Navbar bg="dark" variant={"dark"} expand="lg">
-            {/* <Navbar.Brand href="#">Navbar Demo Arjun Codes</Navbar.Brand> */}
+          <Navbar
+            bg="dark"
+            variant="dark"
+            expand="sm"
+            style={{
+              maxHeight: "100%",
+              width: "15%",
+              position: "fixed",
+              height: "100%.",
+              overflow: "auto",
+            }}
+          >
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
               <Nav
-                className="mr-auto my-2 my-lg-0"
+                className="flex-column "
+                fill
+                variant="tabs"
                 style={{ maxHeight: "100px" }}
                 navbarScroll
               >
