@@ -13,31 +13,49 @@ import LanView from "../lan_view/LanView";
 import Alart from "../alart/Alart";
 import Chart from "../chart/Chart";
 import Login from "../Login/Login";
+import { Navbar, NavDropdown } from "react-bootstrap";
+import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
+import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 
 function NavBarCombonent() {
   return (
     <Router>
       <div>
-        <div className="side">
-          <NavLink to="/Dashbord" className="NavLink">
-            Dashbord
-          </NavLink>
-          <NavLink className="NavLink" as={Link} to="/CCTV">
-            CCTV{" "}
-          </NavLink>
-          <NavLink className="NavLink" as={Link} to="/lan_view">
-            Plan View{" "}
-          </NavLink>
-          <NavLink className="NavLink" as={Link} to="/alart">
-            Alart{" "}
-          </NavLink>
-          <NavLink className="NavLink" as={Link} to="/chart">
-            Chart{" "}
-          </NavLink>
-          <NavLink className="NavLink" as={Link} to="/login">
-            Login{" "}
-          </NavLink>
-        </div>
+        <Navbar bg="light" expand="lg">
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <div className="side">
+              <NavLink to="/Dashbord" className="NavLink">
+                Dashbord
+              </NavLink>
+              <NavDropdown
+                className="NavLink"
+                as={Link}
+                to="/CCTV"
+                title="Dropdown"
+                id="basic-nav-dropdown"
+              >
+                <NavDropdown.Item href="#action/3.1">CCTV 1</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">CCTV 2</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">CCTV 3</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">CCTV 4</NavDropdown.Item>
+              </NavDropdown>
+
+              <NavLink className="NavLink" as={Link} to="/lan_view">
+                Plan View{" "}
+              </NavLink>
+              <NavLink className="NavLink" as={Link} to="/alart">
+                Alart{" "}
+              </NavLink>
+              <NavLink className="NavLink" as={Link} to="/chart">
+                Chart{" "}
+              </NavLink>
+              <NavLink className="NavLink" as={Link} to="/login">
+                Login{" "}
+              </NavLink>
+            </div>
+          </Navbar.Collapse>
+        </Navbar>
       </div>
       <div>
         <Switch>

@@ -22,6 +22,7 @@ export default function Login({ setToken }) {
       password,
     });
     setToken(token);
+    console.log(email, password, token);
   };
   // //login function
   // function loginHandler(e) {
@@ -64,10 +65,9 @@ export default function Login({ setToken }) {
                 />
               </div>
 
-              <button
-                class="btn btn-primary shadow-2 mb-4"
-                type="submit"
-              ></button>
+              <button class="btn btn-primary shadow-2 mb-4" type="submit">
+                LOG IN
+              </button>
             </form>
           </div>
         </div>
