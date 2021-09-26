@@ -19,11 +19,11 @@ function Header() {
  <div> 
      
     <div className="hedearContenar">
-    {/* <BiLogIn> */}
+    
         <Router>
-        <Link className="link feather icon-log-in" to="/login">Login</Link>
+        <Link className="link feather icon-log-in" to="/login">  Login</Link>
         
-        <Link  className="link feather icon-log-out " to="/login">Logout</Link>
+        <Link  className="link feather icon-log-out " to="/login">  Logout</Link>
         
         
         <Switch>
