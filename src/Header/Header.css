@@ -1,0 +1,35 @@
+.hedearContenar{
+    display: block;
+    justify-content: space-around;
+
+/* 
+    font-family: "feather" !important;
+  font-style: normal;
+  font-weight: bolder;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 60px; */
+   
+
+ 
+
+} 
+.link{
+   
+    color: #0a0802;
+    float: right;
+    text-decoration: none;
+    text-align: right;
+    padding: 6px 8px 6px 16px;
+    
+    
+
+
+
+}
