@@ -19,7 +19,7 @@ function NavBarCombonent() {
   return (
     <Router>
       <div>
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <div className="side">
@@ -27,7 +27,7 @@ function NavBarCombonent() {
                 Dashbord
               </NavLink>
               <NavDropdown
-                className="NavLink"
+                className="NavLink "
                 as={Link}
                 to="/CCTV"
                 variant="success"
