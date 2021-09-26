@@ -11,6 +11,7 @@ import "./Header.css";
 import Chart from "../chart/Chart";
 import Login from "../Login/Login";
 import { Navbar, NavDropdown } from "react-bootstrap";
+import { IconName } from "react-icons/bi";
 import userEvent from "@testing-library/user-event";
 
 function Header() {
@@ -18,9 +19,12 @@ function Header() {
  <div> 
      
     <div className="hedearContenar">
+    {/* <BiLogIn> */}
         <Router>
-        <Link className="link" to="/login">Login</Link>
-        <Link className="link" to="/login">Logout</Link>
+        <Link className="link feather icon-log-in" to="/login">Login</Link>
+        
+        <Link  className="link feather icon-log-out " to="/login">Logout</Link>
+        
         
         <Switch>
             <Route path="/login">
