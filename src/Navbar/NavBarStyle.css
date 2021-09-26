@@ -1,0 +1,35 @@
+.side {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #3f4d67;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.NavLink {
+  color: rgb(243, 243, 243);
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "feather" !important;
+  font-style: normal;
+  font-weight: bolder;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  justify-content: center;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 60px;
+}
+.NavLink:hover {
+  background-color: #3c485f;
+  color: rgb(243, 243, 243);
+  text-decoration: none;
+}

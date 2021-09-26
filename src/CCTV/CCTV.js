@@ -6,7 +6,7 @@ export default class CCTV extends Component {
       <div class="auth-wrapper">
         <div class="auth-content">
           <div class="card">
-            <div class="card-body text-center">       
+            <div class="card-body text-center">
               <h3 class="mb-4">hi from CCTV</h3>
             </div>
           </div>
