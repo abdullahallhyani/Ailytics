@@ -14,8 +14,6 @@ import Alart from "../alart/Alart";
 import Chart from "../chart/Chart";
 import Login from "../Login/Login";
 import { Navbar, NavDropdown } from "react-bootstrap";
-import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
-import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 
 function NavBarCombonent() {
   return (
@@ -32,8 +30,9 @@ function NavBarCombonent() {
                 className="NavLink"
                 as={Link}
                 to="/CCTV"
-                title="Dropdown"
-                id="basic-nav-dropdown"
+                variant="success"
+                title="CCTV"
+                style={{ color: "rgb(243, 243, 243", textDecoration: "none" }}
               >
                 <NavDropdown.Item href="#action/3.1">CCTV 1</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.1">CCTV 2</NavDropdown.Item>
